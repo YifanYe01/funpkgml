@@ -4,11 +4,19 @@ Title: Machine learning algorithm evaluation regarding sample
 Version: 0.1.0
 Author: Yifan Ye
 Maintainer: The package maintainer <Yifan.Ye@campus.lmu.de>
-Description: 
-Generating evaluation plots on the performance of using different training-test data split ratios in linear regression machine learning model, as well as on performance using different resampling strategies on binary classification machine learning task.
-The function eval_split_ratio() looks the performance of linear regression models with training data share from 10% to 90% by 10% steps, results in box-plot showing the relationship between different between share of training data and the mean squared error of prediction.
-The function rsmp_mce() uses logistic regression to solve the binary classification task and then compare different miss-classification errors on test data using the following re-sampling strategies: 1) three times ten-fold cross validation (3x10 CV); 2) ten times three-fold cross validation (10x3 CV); 3) a singe holdout split with 90% training data.
-
+Description: Generating evaluation plots on the performance of using different
+    training-test data split ratios in linear regression machine learning model,
+    as well as on performance using different resampling strategies on binary
+    classification machine learning task. The function eval_split_ratio() looks
+    the performance of linear regression models with training data share from 
+    10% to 90% by 10% steps, results in box-plot showing the relationship 
+    between different between share of training data and the mean squared error 
+    of prediction. The function rsmp_mce() uses logistic regression to solve 
+    the binary classification task and then compare different 
+    miss-classification errors on test data using the following re-sampling 
+    strategies: 1) three times ten-fold cross validation (3x10 CV); 
+    2) ten times three-fold cross validation (10x3 CV); 
+    3) a singe holdout split with 90% training data.
 License: GPLv3
 Encoding: UTF-8
 LazyData: true
