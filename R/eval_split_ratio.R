@@ -1,7 +1,3 @@
-library("mlr3")
-library("mlbench")
-library("mlr3learners")
-library("tidyverse")
 
 # create the function: using linear regression to learn the relationship between independent variable x and the target y
 # test different train-test data split ratio from 10% to 90% with the step 10% and compare the mean squared error when using different train-test data sample splits with boxplot
@@ -19,6 +15,11 @@ library("tidyverse")
 #' @export
 #'
 #' @examples eval_split_ratio(Boston$dis, Boston$nox)
+#'
+#' @import tidyverse
+#' @import mlr3
+#' @import mlr3bench
+#' @import mlr3learners
 #'
 eval_split_ratio <- function(x, y){
 

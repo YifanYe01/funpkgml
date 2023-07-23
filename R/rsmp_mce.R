@@ -1,8 +1,3 @@
-library("mlr3")
-library("mlbench")
-library("mlr3learners")
-library("tidyverse")
-library("mlbench")
 
 # create the function: using logistic regression to solve the binary classification task
 # use this function to compare different miss-classification errors on test data using the following re-sampling strategies:
@@ -18,6 +13,11 @@ library("mlbench")
 #'
 #' @return the resulting bar plot showing miss-classification errors when using different resampling strategies
 #' @export
+#'
+#' @import tidyverse
+#' @import mlr3
+#' @import mlr3bench
+#' @import mlr3learners
 #'
 #' @examples
 #' rsmp_mce(tsk("german_credit"))
