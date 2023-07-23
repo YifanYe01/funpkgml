@@ -18,7 +18,7 @@
 #'
 #' @import tidyverse
 #' @import mlr3
-#' @import mlr3bench
+#' @import mlr3benchmark
 #' @import mlr3learners
 #'
 eval_split_ratio <- function(x, y){
