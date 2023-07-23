@@ -2,6 +2,7 @@
 
 export(eval_split_ratio)
 export(rsmp_mce)
+import(ggplot2)
 import(mlr3)
 import(mlr3benchmark)
 import(mlr3learners)

@@ -18,6 +18,7 @@
 #' @import mlr3
 #' @import mlr3benchmark
 #' @import mlr3learners
+#' @import ggplot2
 #'
 #' @examples
 #' rsmp_mce(tsk("german_credit"))

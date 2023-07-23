@@ -20,6 +20,7 @@
 #' @import mlr3
 #' @import mlr3benchmark
 #' @import mlr3learners
+#' @import ggplot2
 #'
 eval_split_ratio <- function(x, y){
 
