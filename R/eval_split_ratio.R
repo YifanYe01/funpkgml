@@ -23,6 +23,8 @@
 #' @import ggplot2
 #'
 eval_split_ratio <- function(x, y){
+  # don't spam the console with info messages
+  lgr::get_logger("mlr3")$set_threshold("warn")
 
   df <- data.frame(x, y)
 

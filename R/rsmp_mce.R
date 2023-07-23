@@ -27,6 +27,9 @@ rsmp_mce <- function(task){
   # create the logistic regression learner
   learner <- lrn("classif.log_reg")
 
+  # don't spam the console with info messages
+  lgr::get_logger("mlr3")$set_threshold("warn")
+
   # create different resampling strategies
   set.seed(123)
   resampling_3x10_cv <- rsmp("repeated_cv", folds = 10, repeats = 3)
